@@ -1,7 +1,5 @@
 //informações
-let dev_PJ
-let dev_PF
-let total_dev
+let dev_PJ, dev_PF, total_dev
 
 //entrada
 dev_PF = Number(prompt("Qual o total de devs PFs"))

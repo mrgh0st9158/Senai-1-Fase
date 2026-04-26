@@ -1,7 +1,5 @@
 //informações
-let preco_calcado
-let quantidade
-let calculo_final
+let preco_calcado, calculo_final, quantidade
 
 //entrada
 quantidade = Number(prompt("Qual foi a quantidade de pares trocados?"))
