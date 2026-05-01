@@ -19,7 +19,7 @@ if(nivel_resposta == 1){
     nivel = 3
 }if(nivel_resposta == 3){
     nivel = 5
-}else{
+}if(nivel_resposta >3 || nivel_resposta < 1){
     console.log("Erro de configuração de perfil. ;c")
 }
    //processamento das carnes
@@ -33,22 +33,24 @@ consumo_carvao = carvao * total_carne
 consumo_sal = sal * total_carne
 
    //processamento de bebidas ou não
-if(bebida_resposta.toLowerCase() == "não"){
+if(alcool_resposta.toLowerCase() == "não"){
     total_cerveja = 0
 }
+
 if(refri_resposta.toLowerCase() == "não"){
-    total_refri == 0
+    total_refri = 0
 }
+
 if(agua_resposta.toLowerCase() == "não"){
-    total_agua == 0
+    total_agua = 0
 }
 
 //saída
 console.log("=====================\n")
-console.log("Carne: " + total_carne + "kg\n")
-console.log("Cerveja: " + total_cerveja + "L")
-console.log("Água: " + total_agua + "L")
-console.log("Refrigerante: " + total_refri + "L")
+console.log("Carne: " + total_carne.toFixed(0) + "kg\n")
+console.log("Cerveja: " + total_cerveja.toFixed(0) + "L")
+console.log("Água: " + total_agua.toFixed(0) + "L")
+console.log("Refrigerante: " + total_refri.toFixed(0) + "L")
 console.log("=====================\n")
-console.log("O consumo de carvão é equivalente a: " + consumo_carvao)
-console.log("O consumo de sal é equivalente a: " + consumo_sal)
+console.log("O consumo de carvão é equivalente a: " + consumo_carvao.toFixed(2) + "KG")
+console.log("O consumo de sal é equivalente a: " + consumo_sal.toFixed(2) + "KG")
