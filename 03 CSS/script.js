@@ -177,3 +177,55 @@ function sistema_transporte(){
     resposta.innerHTML = "Transporte indisponível por motivo de segurança."
    }
 }
+function jaula_junin(){
+    //informações
+    let horario_atual, visitantes_na_area
+
+    //entrada
+    horario_atual = Number(prompt("Qual o horário atual?"))
+    visitantes_na_area = Number(prompt("Quantos visitantes possuem na área?"))
+
+    //processamento
+
+
+    //saída
+    if(visitantes_na_area == 0 && (horario_atual < 8 || horario_atual > 18)){
+        resposta.innerHTML = ("Liberação autorizada. Abrindo jaula.")
+    }else{
+        resposta.innerHTML = ("Liberação negada. Área em uso ou fora do horário permitido.")
+    }
+    // if(visitantes_na_area > 0 || horario_atual >= 8 && horario_atual <= 18){
+    //     resposta.innerHTML = ("Liberação negada. Área em uso ou fora do horário permitido.")
+    // }else{
+    //     resposta.innerHTML = ("Liberação autorizada. Abrindo jaula.")
+    // }
+}
+function verificar_dia_semana(){
+    //informações
+    let numero, resposta_semana
+ 
+    //entrada
+    numero = Number(prompt("Digite o número do dia da semana:"))
+
+    //processamento
+    if(numero == 1){
+        resposta_semana = "Domingo"
+    }if(numero == 2){
+        resposta_semana = "Segunda-feira"
+    }if(numero == 3){
+        resposta_semana = "Terça-feira"
+    }if(numero == 4){
+        resposta_semana = "Quarta-feira"
+    }if(numero == 5){
+        resposta_semana = "Quinta-feira"
+    }if(numero == 6){
+        resposta_semana = "Sexta-feira"
+    }if(numero == 7){
+        resposta_semana = "Sábado"
+    }else{
+        resposta_semana = "Não existente"
+    }
+
+    //saída
+    resposta.innerHTML = ("O dia da semana é: " + resposta_semana)
+}
