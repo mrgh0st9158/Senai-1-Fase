@@ -1,3 +1,5 @@
+let resposta = document.getElementById("resultado")
+
 function verificarProvisoes(){
     // informações
 
@@ -60,4 +62,118 @@ function recrutamento_marujos(){
     }else{
         document.getElementById("resultado").innerHTML = "Reprovado. Volte quando estiver mais preparado para o mar."
     }
+}
+function maquina_fumaca(){
+    //informações
+    let criancas_pequenas, velocidade_vento
+
+    //entrada
+    criancas_pequenas = Number(prompt("Qual o total de crianças na festa?"))
+    velocidade_vento = Number(prompt("Qual a velocidade do vento no momento?"))
+    
+    //processamento
+    
+
+    //saída
+    if(criancas_pequenas == 0 && velocidade_vento >= 0.5){
+        document.getElementById("resultado").innerHTML = ("Fumaça liberada. Que comecem os mistérios!")
+    }else{
+        document.getElementById("resultado").innerHTML = ("Fumaça bloqueada. Aguardar condições ideais.")
+    }
+}
+function verificar_idade(){
+    //informações
+    let idade
+
+    //entrada
+    idade = Number(prompt("Digite sua idade:"))
+
+    //processamento
+    
+
+    //saída
+    if(idade >= 18){
+      resposta.innerHTML = "Você é maior de idade."
+    }else{
+      resposta.innerHTML = "Você é menor de idade."
+    }
+}
+function deslocamento_eventos(){
+    //informações
+    let esta_gripado, tempo_distancia
+
+    //entrada
+    esta_gripado = (prompt("Sarumano está gripado?\nSim = S Não = N"))
+    tempo_distancia = Number(prompt("Quantos minutos leva até chegar no local do evento?"))
+
+    //processamento
+
+
+    //saída
+    if((esta_gripado.toLowerCase == "s" || esta_gripado.toLowerCase == "sim") && tempo_distancia < 45){
+        resposta.innerHTML = "Viagem autorizada. Rumo ao show!"
+    }else{
+        resposta.innerHTML = "Deslocamento inviável. Melhor recusar este evento."
+    }
+}
+function entrada_palco(){
+    //informações
+    let som_funcionando, figurino
+
+    //entrada
+    som_funcionando = (prompt("O som está funcionando corretamente?\nSim ou Não"))
+    figurino = (prompt("O figurino está completo? Até mesmo o chapéu de Sarumano?"))
+
+    //processamento
+
+
+    //saída
+    if(som_funcionando.toLowerCase() == "sim" && figurino == "sim"){
+        resposta.innerHTML = "Palco liberado para Sarumano! Luzes, câmera, ilusão!"
+    }if((figurino.toLowerCase() == "nao" || figurino.toLowerCase() == "não") && som_funcionando.toLowerCase() == "sim"){
+        resposta.innerHTML = "Faltando parte do figurino. Te vira no improviso!"
+    }if((som_funcionando.toLowerCase() == "nao" || som_funcionando.toLowerCase() == "não") && figurino.toLowerCase() == "sim"){
+        resposta.innerHTML = "Sem som. Realizar apresentação alternativa no salão."
+    }if((som_funcionando.toLowerCase() == "nao" || som_funcionando.toLowerCase() == "não") && figurino.toLowerCase() == "nao" || figurino.toLowerCase == "não"){
+        resposta.innerHTML = "Apresentação cancelada. Hora da mágica de desaparecer…"
+    }
+}
+function jogo_adivinhação(){
+    // let numero = Math.round(Math.random()*10)// 0..10
+    // let numero = Math.floor(Math.random()*10) // 0..9
+    let numero = Math.ceil(Math.random()*3) // 1..3
+    // let numero = Math.random()
+    // console.log(numero);
+    // numero = numero * 10
+    // console.log(numero);
+    // numero = Math.ceil(numero)
+    // console.log(numero);
+
+    let chute = Number(prompt("Dá o chute aí. Se for o mesmo número que escolhi, você ganha."))
+
+    console.log(numero)
+
+    if(chute == numero){
+        resposta.innerHTML = "Acertou!"
+    }else{
+        resposta.innerHTML = "Errou! ;c"
+    }
+}
+function sistema_transporte(){
+    //informações
+    let emergencia_ativa, manutenção_ativa
+    
+    //entrada
+    emergencia_ativa = (prompt("A emergência está ativa no momento?"))
+    manutenção_ativa = (prompt("O parque está em manuntenção?"))
+
+    //processamento
+
+
+    //saída
+   if((emergencia_ativa == "nao" || emergencia_ativa == "não") && (manutenção_ativa == "nao" || manutenção_ativa == "não")){
+    resposta.innerHTML = "Transporte liberado para uso."
+   }else{
+    resposta.innerHTML = "Transporte indisponível por motivo de segurança."
+   }
 }
