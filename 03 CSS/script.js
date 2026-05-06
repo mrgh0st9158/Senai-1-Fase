@@ -222,10 +222,26 @@ function verificar_dia_semana(){
         resposta_semana = "Sexta-feira"
     }if(numero == 7){
         resposta_semana = "Sábado"
-    }else{
-        resposta_semana = "Não existente"
+    }if(numero > 7 || numero < 1){
+        resposta_semana = "Dia não existente."
     }
 
     //saída
     resposta.innerHTML = ("O dia da semana é: " + resposta_semana)
+}
+function beecrowd_media1(){
+    //ainda está errado, consertar código urgente.
+    //informações
+    let peso_nota1 = 3.5, peso_nota2 = 7.5
+    let resposta_nota1, resposta_nota2, media
+
+    //entrada
+    resposta_nota1 = Number(prompt("Resultado da nota 1:"))
+    resposta_nota2 = Number(prompt("Resultado da nota 2"))
+
+    //processamento
+    media = ((resposta_nota1 * peso_nota1) + (resposta_nota2 * peso_nota2)) / 10
+
+    //saída
+    resposta.innerHTML = ("A média final é equivalente a: "  + media)
 }
