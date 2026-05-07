@@ -230,7 +230,6 @@ function verificar_dia_semana(){
     resposta.innerHTML = ("O dia da semana é: " + resposta_semana)
 }
 function beecrowd_media1(){
-    //ainda está errado, consertar código urgente.
     //informações
     let peso_nota1 = 3.5, peso_nota2 = 7.5
     let resposta_nota1, resposta_nota2, media
@@ -240,8 +239,8 @@ function beecrowd_media1(){
     resposta_nota2 = Number(prompt("Resultado da nota 2"))
 
     //processamento
-    media = ((resposta_nota1 * peso_nota1) + (resposta_nota2 * peso_nota2)) / 10
+    media = ((resposta_nota1 * peso_nota1) + (resposta_nota2 * peso_nota2)) / 11
 
     //saída
-    resposta.innerHTML = ("A média final é equivalente a: "  + media)
+    resposta.innerHTML = ("A média final é equivalente a: "  + media.toFixed(5))
 }
