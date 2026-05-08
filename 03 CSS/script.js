@@ -21,7 +21,6 @@ function verificarProvisoes(){
     
 }
 
-
 function calcularChances(){
     // alert("Aqui vou calcular as chances das criancinhas...")
 
@@ -243,4 +242,66 @@ function beecrowd_media1(){
 
     //saída
     resposta.innerHTML = ("A média final é equivalente a: "  + media.toFixed(5))
+}
+function beecrowd_media2(){
+    //informações
+    let peso_nota1 = 2, peso_nota2 = 3, peso_nota3 = 5
+    let resposta_nota1, resposta_nota2, resposta_nota3, media
+
+    //entrada
+    resposta_nota1 = Number(prompt("Digite a nota 1:"))
+    resposta_nota2 = Number(prompt("Digite a nota 2"))
+    resposta_nota3 = Number(prompt("Digite a nota 3"))
+
+    //processamento
+    media = ((peso_nota1 * resposta_nota1) + (peso_nota2 * resposta_nota2) + (peso_nota3 * resposta_nota3)) / 10
+
+    //saída
+    resposta.innerHTML = ("A média dessas 3 notas é equivalente a: " + media)
+}
+function beecrowd_salario(){
+    //informações
+    let id_funcionario, horas_trabalhadas, salario_por_horas
+    let salario_mensal
+
+    //entrada
+    id_funcionario = Number(prompt("Digite a ID do funcionário:"))
+    horas_trabalhadas = Number(prompt("Digite as horas trabalhadas:"))
+    salario_por_horas = Number(prompt("Digite o salário recebido por hora trabalhada:"))
+
+    //processamento
+    salario_mensal = horas_trabalhadas * salario_por_horas
+
+    //saída
+    resposta.innerHTML = ("O salário mensal é equivalente a: U$" + salario_mensal.toFixed(2))
+}
+function dona_bete(){
+   // infos
+    let totalBruto, premiacoes, presentes, comissoes, lucro
+    let meta
+    // entradas
+    totalBruto = Number(prompt("Total bruto: "))
+    premiacoes = Number(prompt("Premiações: "))
+    presentes = Number(prompt("Presentinhos: "))
+    comissoes = Number(prompt("Comissões: "))
+    meta = Number(prompt("Meta de hoje:"))
+    // processamento
+    lucro = totalBruto - premiacoes - presentes - comissoes
+    let mensagem = ""
+    if(lucro >= meta){
+        // bateu a meta - 
+        mensagem = "👵Batemos a meta, lucro de R$" + lucro.toFixed(2).replace('.',',')
+    }else{
+        // não bateu a meta
+        if(lucro > 0){
+        // sem meta mas com lucro
+            mensagem = "Não batemos a meta, mas tivemos lucro de R$" + lucro.toFixed(2).replace('.',',')
+        }else{
+        // sem meta e prejuízo
+            let prejuizo = lucro * -1
+            mensagem = "💀☠️⚔️🗡️🔫🦵Não batemos a meta e ainda tivemos prejuízo de R$" + prejuizo.toFixed(2).replace('.',',') 
+        }
+    }    
+    //saída
+    resposta.innerHTML = mensagem
 }
