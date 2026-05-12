@@ -305,3 +305,41 @@ function dona_bete(){
     //saída
     resposta.innerHTML = mensagem
 }
+function tempo_viagem_mano_juca(){
+    //consertar o código urgentemente, algo está errado.
+    //informações
+    let distancia_quilometros, tempo_final_segundos, velocidade = 300000
+
+    //entrada
+    distancia_quilometros = Number(prompt("Qual a distância da corrida em KMs?"))
+    
+    //processamento
+    tempo_final_segundos = distancia_quilometros / velocidade
+
+    //saída
+     if(tempoDeViagemEmS > 60){
+        tempoEmMinutos = tempoDeViagemEmS / 60
+        resultado.innerHTML += "<br>Ou " + tempoEmMinutos + "m"
+    }
+    
+        if(tempoEmMinutos > 60){
+        tempoEmHoras = tempoEmMinutos / 60
+        resultado.innerHTML += "<br>Ou " + tempoEmHoras + "h"
+    }
+    
+        if(tempoEmHoras > 24){
+        tempoEmDias = tempoEmHoras / 24
+        resultado.innerHTML += "<br>Ou " + tempoEmDias + " Dias"
+    }
+    
+        if(tempoEmDias > 30){
+        tempoEmMeses = tempoEmDias / 30
+        resultado.innerHTML += "<br>Ou " + tempoEmMeses + " Meses"
+    }
+    
+        if(tempoEmMeses > 12){
+        tempoEmAnos = tempoEmMeses / 12
+        resultado.innerHTML += "<br>Ou " + tempoEmAnos + " Anos"
+
+    }
+}
