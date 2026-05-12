@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(50, 55, 99);
+    background-color: rgb(53, 53, 53);
 }
 
 output {
@@ -11,10 +11,10 @@ output {
 }
 
 button{
-    background-color: #0000ff;
-    color: #99FFFF;
-    padding: 5px;
-    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4px;
+    border-radius: 100px;
     border: none;
-    margin: 10px;
+    margin: 7px;
 }

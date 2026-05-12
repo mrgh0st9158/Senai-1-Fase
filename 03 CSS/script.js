@@ -306,40 +306,63 @@ function dona_bete(){
     resposta.innerHTML = mensagem
 }
 function tempo_viagem_mano_juca(){
-    //consertar o código urgentemente, algo está errado.
     //informações
     let distancia_quilometros, tempo_final_segundos, velocidade = 300000
+    let tempo_em_minutos, tempo_em_horas, tempo_em_dias, tempo_em_segundos, tempo_em_meses, tempo_em_anos
 
     //entrada
     distancia_quilometros = Number(prompt("Qual a distância da corrida em KMs?"))
     
     //processamento
-    tempo_final_segundos = distancia_quilometros / velocidade
+    tempo_em_segundos = distancia_quilometros / velocidade
 
     //saída
-     if(tempoDeViagemEmS > 60){
-        tempoEmMinutos = tempoDeViagemEmS / 60
-        resultado.innerHTML += "<br>Ou " + tempoEmMinutos + "m"
-    }
-    
-        if(tempoEmMinutos > 60){
-        tempoEmHoras = tempoEmMinutos / 60
-        resultado.innerHTML += "<br>Ou " + tempoEmHoras + "h"
-    }
-    
-        if(tempoEmHoras > 24){
-        tempoEmDias = tempoEmHoras / 24
-        resultado.innerHTML += "<br>Ou " + tempoEmDias + " Dias"
-    }
-    
-        if(tempoEmDias > 30){
-        tempoEmMeses = tempoEmDias / 30
-        resultado.innerHTML += "<br>Ou " + tempoEmMeses + " Meses"
-    }
-    
-        if(tempoEmMeses > 12){
-        tempoEmAnos = tempoEmMeses / 12
-        resultado.innerHTML += "<br>Ou " + tempoEmAnos + " Anos"
+     resposta.innerHTML = (tempo_em_segundos + "segundos")
 
+     if(tempo_em_segundos > 60){
+        tempo_em_minutos = tempo_em_segundos / 60
+
+        resposta.innerHTML += "<br> ou " + tempo_em_minutos.toFixed(3) + " minutos"
+    }if(tempo_em_minutos > 60){
+        tempo_em_horas = tempo_em_minutos / 60
+        
+        resposta.innerHTML += "<br> ou " + tempo_em_horas.toFixed(3) + " horas"
+       
+     }if(tempo_em_horas > 24){
+        tempo_em_dias = tempo_em_horas / 24
+
+        resposta.innerHTML += "<br> ou " + tempo_em_dias.toFixed(3) + " dias"
+     }if(tempo_em_dias > 30){
+        tempo_em_meses = tempo_em_dias / 30
+
+        resposta.innerHTML += "<br> ou " + tempo_em_meses.toFixed(3) + " meses"
+     }if(tempo_em_meses > 12){
+        tempo_em_anos = tempo_em_meses / 12
+
+        resposta.innerHTML =+"<br> ou " + tempo_em_anos.toFixed(3) + " anos"
+     }
+}
+function plumas_de_avalon(){
+    //informações
+    let salario, valor_emprestimo, valor_prestação, quantidade_prestacoes, exigencia_emprestimo
+    parseFloat = salario, valor_emprestimo, quantidade_prestacoes
+
+    //entrada
+    salario = (prompt("Digite o salário:"))
+    valor_emprestimo = (prompt("Digite o valor do empréstimo:"))
+    quantidade_prestacoes = (prompt("Digite a quantidade das prestações:"))
+
+    //processamento
+    valor_prestação = valor_emprestimo / quantidade_prestacoes
+
+    exigencia_emprestimo = salario * 0.30
+
+    //saída
+    if(valor_prestação < exigencia_emprestimo){
+        resposta.innerHTML = ("Pagamento realizado com sucesso.")
+    }if(salario < 1){
+        resposta.innerHTML = ("Não é possível realizar o pagamento, não é possível realizar testes com salários negativos ou zerados.")
+    }else{
+        resposta.innerHTML = ("Não é possível realizar o pagamento, seu salário passa de 30% das prestações")
     }
 }
