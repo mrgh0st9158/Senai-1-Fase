@@ -7,15 +7,48 @@
     <title>var</title>
 </head>
 <body>
+    
     <h1>Variáveis</h1>
+    <hr>
+    <h2>Soma de diferentes dados</h2>
+
+    <output id="resultado_soma_dados"></output>
+
+    <button onclick="dado_d4()">Rolar D4</button>
+    <button onclick="dado_d6()">Rolar D6</button>
+    <button onclick="dado_d10()">Rolar D10</button>
+    <button onclick="dado_d12()">Rolar D12</button>
+    
+    <div id="lista_dados">
+
+
+    </div>
+
+    <hr>
+
+    <h2>Vendas na Harry Ploter</h2>
+    <p id="total_vendido"> Total de vendas: R$0,00</p>
+    <label for=""></label>
+    <input id="input_valor" type="text">
+    <button onclick="registrar_venda()">Cadastrar</button>
+    <p id="p_total_vendido"></p>
+    <div id="lista_valor">
+        
+    </div>
+    <hr>
+
     emmet vs code
     <hr>
-       <button onclick="incrementar_contagem()">+</button>
-
-        <p id="p-contagem">
-            0
+            <button onclick="incrementar_contagem()">+</button>
+            <button onclick="somar_10()">somar 10</button>
+            <button onclick="somar_2()">somar 2</button>
+            <button onclick="zerarContagem()">zerar contagem</button>
+       <p id="p-contagem">
+           0
         </p>
+
         
+        <button onclick="decrementar_contagem()">-</button>
     <hr>
     <script src="script.js"></script>
 </body>
