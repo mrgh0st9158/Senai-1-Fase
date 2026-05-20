@@ -6,3 +6,7 @@ body{
 .btns{
     color: aquamarine;
 }
+
+#lista_dados{
+    margin-top: 10px;
+}
