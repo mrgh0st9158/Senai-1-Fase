@@ -1,3 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // consertar código de dinossauros urgentemente
 
 let numero_aleatorio_aposta
@@ -9,6 +26,8 @@ function registrar_aposta(){
 
     console.log(numero_aleatorio_aposta)
 
+    document.getElementById("input_aposta").value = ""
+
 }
 
 function botao_espinossauro(){
@@ -16,8 +35,21 @@ function botao_espinossauro(){
         valor_apostado = valor_apostado * 2
 
         document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Ganhou, Lindão.🤩")
+        
+    }else{
+        valor_apostado = 0
+        
+        document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Perdeu, bobão.🤣")
+
     }
 
+    document.getElementById("dinossauro_escolhido").innerHTML = ("Dinossauro escolhido: Espinossauro")
+    
+    f_dinossauro_sorteado()
+
+    recarregar_pagina()
 }
 
 function botao_trex(){
@@ -25,7 +57,20 @@ function botao_trex(){
         valor_apostado = valor_apostado * 2
 
         document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Ganhou, Lindão.🤩")
+    }else{
+        valor_apostado = 0
+
+        document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Perdeu, bobão.🤣")
+        
     }
+
+    document.getElementById("dinossauro_escolhido").innerHTML = ("Dinossauro escolhido: T-Rex")
+    
+    f_dinossauro_sorteado()
+    
+    recarregar_pagina()
 }
 
 function botao_braquiossauro(){
@@ -33,7 +78,20 @@ function botao_braquiossauro(){
         valor_apostado = valor_apostado * 2
 
         document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Ganhou, Lindão.🤩")
+    }else{
+        valor_apostado = 0
+
+        document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Perdeu, bobão.🤣")
+
     }
+
+    document.getElementById("dinossauro_escolhido").innerHTML = ("Dinossauro escolhido: Braquiossauro")
+
+    f_dinossauro_sorteado()
+
+    recarregar_pagina()
 }
 
 function botao_velociraptor(){
@@ -41,7 +99,20 @@ function botao_velociraptor(){
         valor_apostado = valor_apostado * 2
 
         document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Ganhou, Lindão.🤩")
+    }else{
+        valor_apostado = 0
+
+        document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Perdeu, bobão.🤣")
+
     }
+
+    document.getElementById("dinossauro_escolhido").innerHTML = ("Dinossauro escolhido: Velociraptor")
+
+    f_dinossauro_sorteado()
+
+    recarregar_pagina()
 }
 
 function botao_estegossauro(){
@@ -49,7 +120,20 @@ function botao_estegossauro(){
         valor_apostado = valor_apostado * 2
 
         document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Ganhou, Lindão.🤩")
+    }else{
+        valor_apostado = 0
+
+        document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Perdeu, bobão.🤣")
+
     }
+
+    document.getElementById("dinossauro_escolhido").innerHTML = ("Dinossauro escolhido: Estegossauro")
+
+    f_dinossauro_sorteado()
+
+    recarregar_pagina()
 }
 
 function botao_triceratops(){
@@ -57,7 +141,20 @@ function botao_triceratops(){
         valor_apostado = valor_apostado * 2
 
         document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Ganhou, Lindão.🤩")
+    }else{
+        valor_apostado = 0
+
+        document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Perdeu, bobão.🤣")
+
     }
+
+    document.getElementById("dinossauro_escolhido").innerHTML = ("Dinossauro escolhido: Triceratops")
+
+    f_dinossauro_sorteado()
+
+    recarregar_pagina()
 }
 
 function botao_anquilossauro(){
@@ -65,7 +162,20 @@ function botao_anquilossauro(){
         valor_apostado = valor_apostado * 2
 
         document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Ganhou, Lindão.🤩")
+    }else{
+        valor_apostado = 0
+
+        document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Perdeu, bobão.🤣")
+
     }
+
+    document.getElementById("dinossauro_escolhido").innerHTML = ("Dinossauro escolhido: Anquilossauro")
+
+    f_dinossauro_sorteado()
+
+    recarregar_pagina()
 }
 
 function botao_parassaurolofo(){
@@ -73,7 +183,20 @@ function botao_parassaurolofo(){
         valor_apostado = valor_apostado * 2
 
         document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Ganhou, Lindão.🤩")
+    }else{
+        valor_apostado = 0
+
+        document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Perdeu, bobão.🤣")
+
     }
+
+    document.getElementById("dinossauro_escolhido").innerHTML = ("Dinossauro escolhido: Parassaurolofo")
+
+    f_dinossauro_sorteado()
+
+    recarregar_pagina()
 }
 
 function botao_alossauro(){
@@ -81,7 +204,20 @@ function botao_alossauro(){
         valor_apostado = valor_apostado * 2
 
         document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Ganhou, Lindão.🤩")
+    }else{
+        valor_apostado = 0
+
+        document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Perdeu, bobão.🤣")
+
     }
+
+    document.getElementById("dinossauro_escolhido").innerHTML = ("Dinossauro escolhido: Alossauro")
+
+    f_dinossauro_sorteado()
+
+    recarregar_pagina()
 }
 
 function botao_carnotauro(){
@@ -89,10 +225,72 @@ function botao_carnotauro(){
         valor_apostado = valor_apostado * 2
 
         document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Ganhou, Lindão.🤩")
+    }else{
+        valor_apostado = 0
+
+        document.getElementById("aposta_recebida").innerHTML = ("Valor a receber: R$" + valor_apostado)
+        document.getElementById("resultado_final").innerHTML = ("Perdeu, bobão.🤣")
+
     }
+
+    document.getElementById("dinossauro_escolhido").innerHTML = ("Dinossauro escolhido: Carnotauro")
+
+    f_dinossauro_sorteado()
+
+    recarregar_pagina()
 }
 
+function recarregar_pagina(){
+    setTimeout(function() {
+        window.location.reload()
+    }, 3500)
 
+}
+
+function f_dinossauro_sorteado(){
+    if(numero_aleatorio_aposta == 1){
+
+        document.getElementById("dinossauro_sorteado").innerHTML = ("Dinossauro sorteado: Espinossauro")
+
+    }if(numero_aleatorio_aposta == 2){
+
+         document.getElementById("dinossauro_sorteado").innerHTML = ("Dinossauro sorteado: T-Rex")
+
+    }if(numero_aleatorio_aposta == 3){
+
+         document.getElementById("dinossauro_sorteado").innerHTML = ("Dinossauro sorteado: Braquiossauro")
+
+    }if(numero_aleatorio_aposta == 4){
+
+         document.getElementById("dinossauro_sorteado").innerHTML = ("Dinossauro sorteado: Velociraptor")
+
+    }if(numero_aleatorio_aposta == 5){
+
+        document.getElementById("dinossauro_sorteado").innerHTML = ("Dinossauro sorteado: Estegossauro")
+
+    }if(numero_aleatorio_aposta == 6){
+
+        document.getElementById("dinossauro_sorteado").innerHTML = ("Dinossauro sorteado: Triceratops")
+
+    }if(numero_aleatorio_aposta == 7){
+
+        document.getElementById("dinossauro_sorteado").innerHTML = ("Dinossauro sorteado: Anquilossauro")
+
+    }if(numero_aleatorio_aposta == 8){
+
+        document.getElementById("dinossauro_sorteado").innerHTML = ("Dinossauro sorteado: Parassaurolofo")
+
+    }if(numero_aleatorio_aposta == 9){
+
+        document.getElementById("dinossauro_sorteado").innerHTML = ("Dinossauro sorteado: Alossauro")
+
+    }if(numero_aleatorio_aposta == 10){
+
+        document.getElementById("dinossauro_sorteado").innerHTML = ("Dinossauro sorteado: Carnotauro")
+
+    }
+}
 
 
 
