@@ -1,4 +1,13 @@
+let valor_bruto
 
+function registrar_venda_cliente(){
+    valor_bruto = document.getElementById("input_venda_cliente").value
+
+    document.getElementById("input_venda_cliente").style.display = "none"
+
+    document.getElementById()
+    
+}
 
 
 
