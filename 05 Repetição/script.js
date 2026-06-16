@@ -1,3 +1,17 @@
+const todas_telas = document.querySelectorAll("section")
+
+function proxima_tela(){
+      todas_telas.forEach(function(secoes){
+            secoes.classList.add("esconder_elemento")
+
+      })
+
+}
+
+
+
+
+
 function iniciar_historia(){
 
     const escolha = 0
@@ -30,20 +44,20 @@ function iniciar_historia(){
         alert("Roque contou para  as Tias Fofinhas que o evento ainda está engatinhando" +
               "e não temos camarins ou mesmo verba para comprar toalhas de crochê, infelizmente."+
 
-               "\n\nElas ficaram tristes pela dura realidade dos músicos, mas apreciaram a sinceridade."+
-               "Prometeram levar suas próprias toalhas e ainda passaram o contato do grupo de rap dos"+
-               "netos de uma amiga delas. Elas já viram Yasmina e os Manos se apresentando no aniversário"+
-               "da avó deles e acharam muito talentosos e carismáticos, além de muito conectados. Pode"+
-               "ser uma boa adição para este evento."+
+              "\n\nElas ficaram tristes pela dura realidade dos músicos, mas apreciaram a sinceridade."+
+              "Prometeram levar suas próprias toalhas e ainda passaram o contato do grupo de rap dos"+
+              "netos de uma amiga delas. Elas já viram Yasmina e os Manos se apresentando no aniversário"+
+              "da avó deles e acharam muito talentosos e carismáticos, além de muito conectados. Pode"+
+              "ser uma boa adição para este evento."+
 
-               "\n\nRoque foi falar com eles, Yasmina pediu que"+
-               "o grupo fosse marcado em todas as fotos postadas de divulgação do evento, assim eles"+
-               "poderiam atrair seu público para o evento.")
-        
+              "\n\nRoque foi falar com eles, Yasmina pediu que"+
+              "o grupo fosse marcado em todas as fotos postadas de divulgação do evento, assim eles"+
+              "poderiam atrair seu público para o evento.")
+      
 
         escolha = Number(prompt("Roque deve aceitar ou rejeitar essa exigência?"+
-                               "\n4: Aceitar"+
-                               "\n5: Rejeitar"))
+                                "\n4: Aceitar"+
+                                "\n5: Rejeitar"))
 
 
     }if(escolha == 3){
