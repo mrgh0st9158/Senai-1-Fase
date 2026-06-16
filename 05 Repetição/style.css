@@ -15,7 +15,7 @@ body{
 }
 
 button{
-    background-color: rgb(194, 74, 74);
+    background-color: rgb(146, 93, 93);
     color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 20px;
@@ -35,8 +35,12 @@ button:hover{
 }
 
 #botoes_tela{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 150px;
-    gap: 120px;
+    gap: 30px;
+
 }
 
 #layout1{ 

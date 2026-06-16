@@ -1,10 +1,35 @@
-const todas_telas = document.querySelectorAll("section")
+const todas_telas = document.querySelectorAll(".tela");
 
-function proxima_tela(){
-      todas_telas.forEach(function(secoes){
-            secoes.classList.add("esconder_elemento")
+let tela_atual = 0;
+
+function atualizar_telas(){
+      todas_telas.forEach(function(todas_tela_funcao, numero_tela){
+            if(numero_tela === tela_atual){
+                  todas_tela_funcao.classList.remove("esconder_elemento")
+            }else{
+                  todas_tela_funcao.classList.add("esconder_elemento")
+            }
 
       })
+
+
+}
+
+function proxima_tela(){
+      if(tela_atual < todas_telas.length - 1){
+            tela_atual++
+            atualizar_telas()
+
+      }
+
+}
+
+function anterior_tela(){
+      if(tela_atual > 0){
+            tela_atual--
+            atualizar_telas()
+            
+      }
 
 }
 
@@ -14,7 +39,7 @@ function proxima_tela(){
 
 function iniciar_historia(){
 
-    const escolha = 0
+    let escolha = 0
 
     alert("Roque teve a ideia de criar um festival de música pela internet, chamado Rock in Reels." +
 
