@@ -9,8 +9,8 @@
 <body>
 
 
-    <section id="tela_roque" class="tela" >
-        <div id="layout1">
+    <section id="tela_roque" class="tela esconder_elemento" >
+        <div class="layout">
             <p>Clique no botão para iniciar a História de Roque.</p>
             
             <button onclick="iniciar_historia()" id="botao_layout">Iniciar História</button>
@@ -21,23 +21,78 @@
     </section>
 
     <section id="tela2" class="tela esconder_elemento">
+        <div class="layout">
+            <p>Clique no botão para repetições</p>
+            
+            <button onclick="iniciar_repetições()">Iniciar Repetição</button>
 
-
-        <h2>tela2</h2>
-
-    </section>
-
-    <section id="tela3" class="tela esconder_elemento">
-
-        <h2>tela3</h2>
-
+        </div>
+        
     </section>
     
+    <section id="tela3" class="tela esconder_elemento">
+        
+        <div class="layout">
+            <p>Clique no botão para calcular o quadrado de 10 números</p>
+            
+            <button onclick="calcular_quadrado()">Calcular</button>
+
+        </div>        
+        
+    </section>
+
+
+    <section id="tela4" class="tela esconder_elemento">
+        
+        <div class="layout">
+            <p>Clique no botao para imprimir números de 10 a 1</p>
+            
+            <button onclick="imprimir_10_a_1()">Imprimir</button>
+
+        </div>        
+        
+    </section>
+
+    <section id="tela4" class="tela esconder_elemento">
+        
+        <div class="layout">
+            <p>Clique no botao para somar todos os números de 1 até 100</p>
+            
+            <button onclick="soma_1_a_100()">Somar</button>
+
+        </div>        
+        
+    </section>
+
+    <section id="tela5" class="tela ">
+        
+        <div class="layout">
+            <p>Qual tabuada você deseja?</p>
+            
+            <button onclick="tabuada()">Ver tabuada</button>
+
+        </div>        
+        
+    </section>
+
+    <section id="tela6" class="tela ">
+        
+        <div class="layout">
+            <p>Clique para fizzbuzz</p>
+            
+            <button onclick="fizzbuzz()">Fizzbuzz</button>
+
+        </div>        
+        
+    </section>
+    
+    <p id="p-resposta"></p>
     
     <div id="botoes_tela">
         <button onclick="anterior_tela()">Anterior</button>
         <button onclick="proxima_tela()">Próximo</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
