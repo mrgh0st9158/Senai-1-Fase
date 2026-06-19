@@ -14,6 +14,27 @@ body{
     align-items: center;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #b35e3c;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link and background color on hover */
+li a:hover {
+  background-color: #555555;
+  color: white;
+}
+
 button{
     background-color: rgb(146, 93, 93);
     color: rgb(0, 0, 0);

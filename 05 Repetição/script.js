@@ -258,6 +258,36 @@ function tabuada(){
 
 }
 
+function numeros_impares_1_a_20(){
+      i = 0
+
+      while(i < 20){
+            i++
+
+            if(i%2 != 0){
+                  console.log(i)
+            }
+
+      }
+
+}
+
+function numero_fatorial(){
+      let i = 0
+      let resposta = 1
+
+      let numero = Number(prompt("Qual número você deseja calcular?"))
+
+      while(i < numero){
+            i++
+            resposta *= i
+            
+
+
+            console.log(resposta)
+      }
+}
+
 function fizzbuzz(){
       let i = 0
       let numero = 100
@@ -265,10 +295,41 @@ function fizzbuzz(){
 
       while(i < 100){
             i++
+            console.log(i)
+
+            if(i%3 == 0){
+                  console.log("fizz")
+            }if(i%5 == 0){
+                  console.log("buzz")
+            }if(i%3 == 0 && i%5 == 0){
+                  console.log("fizzbuzz")
+            }
             
 
-            document
-
       }
+
+}
+
+function somar_numeros_serie(){
+      let i = 0
+      let resposta = 0
+
+      while(i < 10){
+            i++
+            
+            resposta = resposta + 1/i
+
+            console.log(resposta)
+      }
+
+
+}
+
+function pares_e_impares(){
+      let i = 0
+      let pares = 0
+      let impares = 0
+
+      while
 
 }
