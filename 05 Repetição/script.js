@@ -326,10 +326,141 @@ function somar_numeros_serie(){
 }
 
 function pares_e_impares(){
-      let i = 0
-      let pares = 0
-      let impares = 0
+      let numero = 0
+      let par = 0
+      let impar = 0
 
-      while
+      numero = prompt("Qual número você deseja descobrir os pares e ímpares?")
+
+      for(let i = 0; i < numero; i++){
+            if(i%2 === 0){
+                  impar++
+            }if (i%2 != 0){
+                  par++
+            }
+
+      }
+
+      console.log("Números ímpares: " + impar +
+                  "\nNumeros pares: " + par 
+      )
+
+      
+
+}
+
+function menor_maior(){
+      //pendente fazer
+
+}
+
+function soma_1_a_10(){
+      let soma = 0
+
+
+      for(i = 0; i <= 10; i++){
+            soma += i
+
+      }
+      console.log(soma)
+
+}
+
+function tabuada_5(){
+      let resposta = 0
+
+      for(i = 0; i <= 10; i++){
+            resposta = 5 * i
+
+            console.log(resposta)
+      }
+
+}
+
+function quadrado_1_a_10(){
+            let resposta
+
+            for(i = 0; i < 10; i++){
+                  resposta = i * i
+
+                  console.log(i + ": " + resposta)
+            }
+
+}
+
+function javascript_linhas(){
+      palavra = "JavaScript";
+
+      for(i = 0; i < palavra.length; i++){
+            console.log(palavra[i])
+
+      }
+
+}
+
+function multiplos_3(){
+      resposta = 0
+
+      for(i = 0; i < 30; i++){
+            
+            if(i%3 === 0){
+                  console.log(i)
+            }
+
+      }
+
+}
+
+// function asteriscos(){
+
+//       for
+
+// }
+
+function soma_pares(){
+      let resposta = 0
+
+      for(i = 1; i <= 20; i++){
+            
+            if(i%2 === 0){
+                  resposta += i 
+            }
+
+      }
+      console.log(resposta)
+}
+
+function numeros_5_em_5(){
+      
+      for(i = 0; i <= 50; i++){
+            
+            if(i%5 === 0){
+                  console.log(i)
+            }
+      }
+
+}
+
+function ola_mundo(){
+      palavra = "Olá"
+
+      for(i = 0; i < 8; i++){
+            console.log(palavra)
+
+            console.log("\n")
+            
+      }
+
+}
+
+function for_teste(){
+
+      let soma = 0
+      for(let i = 1; i <= 10; i++){
+            soma += 1;
+            console.log(soma)
+      }
+
+      console.log("A soma total é: " + soma);
 
 }
