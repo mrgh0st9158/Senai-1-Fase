@@ -7,34 +7,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+<button onclick="botao_menu_lateral()" id="botao_lateral_nav"><img src="foto-icone-nav.png" alt="" id="foto_icone_nav"></button>
 
 <h2>Lista de Exercícios</h2>
 
-<ul>
-  <button onclick="tela_roque_nav()">História Roque</button>
-  <button onclick="tela_repeticoes_nav">Repetições</button>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+<ul id="menu_lateral">
+    <div id="conteiner_botoes_nav">
+        <button onclick="ir_para_tela(0)" class="botoes_nav">História Roque</button>
+        <button onclick="ir_para_tela(1)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(2)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(3)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(4)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(5)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(6)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(7)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(8)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(9)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(10)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(11)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(12)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(13)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(14)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(15)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(16)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(17)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(18)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(19)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(20)" class="botoes_nav">Repetições</button>
+        <button onclick="ir_para_tela(21)" class="botoes_nav">Repetições</button>
+        
+    </div>
+    
 </ul>
 
 
-    <section id="tela_roque" class="tela esconder_elemento" >
-        <div class="layout">
-            <p>Clique no botão para iniciar a História de Roque.</p>
-            
-            <button onclick="iniciar_historia()" id="botao_layout">Iniciar História</button>
-        </div>
-
-
+<section id="tela1" class="tela esconder_elemento" >
+    <div class="layout">
+        <p>Clique no botão para iniciar a História de Roque.</p>
         
-    </section>
+        <button onclick="iniciar_historia()" id="botao_layout">Iniciar História</button>
+    </div>
+    
+    
+    
+</section>
 
-    <section id="tela2" class="tela esconder_elemento">
-        <div class="layout">
-            <p>Clique no botão para repetições</p>
-            
-            <button onclick="iniciar_repetições()">Iniciar Repetição</button>
-
+<section id="tela2" class="tela esconder_elemento">
+    <div class="layout">
+        <p id>Clique no botão para repetições</p>
+        
+        <button onclick="iniciar_repetições()">Iniciar Repetição</button>
+        
         </div>
         
     </section>
@@ -45,199 +69,194 @@
             <p>Clique no botão para calcular o quadrado de 10 números</p>
             
             <button onclick="calcular_quadrado()">Calcular</button>
-
+            
         </div>        
         
     </section>
-
-
+    
     <section id="tela4" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Clique no botao para imprimir números de 10 a 1</p>
             
             <button onclick="imprimir_10_a_1()">Imprimir</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela4" class="tela esconder_elemento">
+    
+    <section id="tela5" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Clique no botao para somar todos os números de 1 até 100</p>
             
             <button onclick="soma_1_a_100()">Somar</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela5" class="tela esconder_elemento">
+    
+    <section id="tela6" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Qual tabuada você deseja?</p>
             
             <button onclick="tabuada()">Ver tabuada</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela6" class="tela esconder_elemento">
+    
+    <section id="tela7" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Clique para ver os números ímpares de 1 10</p>
             
             <button onclick="numeros_impares_1_a_20()">Ver números</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela7" class="tela esconder_elemento">
+    
+    <section id="tela8" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Clique para ver o resultado de um número fatorial</p>
             
             <button onclick="numero_fatorial()">Ver números</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela8" class="tela esconder_elemento">
+    
+    <section id="tela9" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Clique para fizzbuzz</p>
             
             <button onclick="fizzbuzz()">Fizzbuzz</button>
-
+            
         </div>        
         
     </section>
-
-    </section>
-
-    <section id="tela9" class="tela esconder_elemento">
+    
+    <section id="tela10" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Clique para somar números em série</p>
             
             <button onclick="somar_numeros_serie()">Clique aqui para somar</button>
-
+            
         </div>        
         
     </section>
-
-    </section>
-
-    <section id="tela10" class="tela esconder_elemento">
+    
+    <section id="tela11" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Escolha um número e veja quantos números impares e pares ele possui.</p>
             
             <button onclick="pares_e_impares()">Clique aqui para escolher o número</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela11" class="tela esconder_elemento">
+    
+    <section id="tela12" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Dê uma lista de números, e direi o menor e o maior.</p>
             
             <button onclick="menor_maior()">Clique aqui para escrever a lista</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela12" class="tela esconder_elemento">
+    
+    <section id="tela13" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Clique para ver a tabuada do 5</p>
             
             <button onclick="tabuada_5()">Clique aqui para ver a tabuada</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela13" class="tela esconder_elemento">
+    
+    <section id="tela14" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Clique para ver a soma dos números de 1 a 10.</p>
             
             <button onclick="soma_1_a_10()">Clique aqui para ver a soma</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela14" class="tela esconder_elemento">
+    
+    <section id="tela15" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Clique para ver o quadrado dos números de 1 até 10</p>
             
             <button onclick="quadrado_1_a_10()">Clique aqui para ver o quadrado</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela15" class="tela esconder_elemento">
+    
+    <section id="tela16" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Clique para ver a palavra "JAVASCRIPT" separado em linhas.</p>
             
             <button onclick="javascript_linhas()">Clique aqui para ver a palavra</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela16" class="tela esconder_elemento">
+    
+    <section id="tela17" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Clique para ver todos os múltiplos de 3 entre 1 a 30</p>
             
             <button onclick="multiplos_3()">Clique aqui para ver os múltiplos</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela17" class="tela esconder_elemento">
+    
+    <section id="tela18" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Clique para ver a soma dos números pares entre 1 a 20</p>
             
             <button onclick="soma_pares()">Clique aqui para ver a soma</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela18" class="tela esconder_elemento">
+    
+    <section id="tela19" class="tela esconder_elemento">
         
         <div class="layout">
             <p>Clique para ver os números de 5 em 5 até 50</p>
             
             <button onclick="numeros_5_em_5()">Clique aqui para ver os números</button>
-
+            
         </div>        
         
     </section>
-
-    <section id="tela19" class="tela ">
+    
+    <section id="tela20" class="tela ">
         
         <div class="layout">
             <p>Clique para ver a palavra "Olá" 8 vezes.</p>
             
             <button onclick="ola_mundo()">Clique aqui para ver os "Olás"</button>
-
+            
         </div>        
         
     </section>
@@ -248,7 +267,7 @@
         <button onclick="anterior_tela()">Anterior</button>
         <button onclick="proxima_tela()">Próximo</button>
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>

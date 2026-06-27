@@ -34,17 +34,34 @@ function anterior_tela(){
 }
 
 
-function reiniciar_processo(){
-      location.reload()
+function reiniciar_telas(){
       
       todas_telas.forEach(function(todas_tela_funcao){
             todas_tela_funcao.classList.add("esconder_elemento")
       })
+      
+}
 
-      tela_atual.classList.remove("esconder_elemento")
+// ==========================================
+// SEÇÃO: NAV
+// ==========================================
+
+function botao_menu_lateral(){
+      document.getElementById("menu_lateral").classList.toggle("menu_aberto")
+
+      document.body.classList.toggle("menu_lateral_ativo");
 
 }
 
+function ir_para_tela(indice){
+      tela_atual = indice
+      atualizar_telas()
+
+}
+
+
+
+// ==========================================
 
 function iniciar_historia(){
 
@@ -176,10 +193,6 @@ function iniciar_repetições(){
 
       document.getElementById("p-resposta").innerHTML += "<br>Valor total: R$" + total.toFixed(2)
 
-      setTimeout(function(){
-            reiniciar_processo()
-      },4000)
-      
 }
 
 function calcular_quadrado(){
@@ -196,10 +209,6 @@ function calcular_quadrado(){
             console.log(i + ": " + quadrado + "<br>")
       }
 
-      setTimeout(function(){
-            reiniciar_processo()
-      },4000)
-
 }
 
 function imprimir_10_a_1(){
@@ -214,10 +223,6 @@ function imprimir_10_a_1(){
             numero--
       }
 
-
-      setTimeout(function(){
-            reiniciar_processo()
-      },4000)
 }
 
 function soma_1_a_100(){
@@ -230,10 +235,6 @@ function soma_1_a_100(){
             
             document.getElementById("p-resposta").innerHTML = "O resultado é equivalente a: " + soma
       }
-
-      setTimeout(function(){
-            reiniciar_processo()
-      },4000)
 
 }
 
@@ -252,9 +253,6 @@ function tabuada(){
             document.getElementById("p-resposta").innerHTML += (resposta + "<br>")
       }
 
-      setTimeout(function(){
-            reiniciar_processo()
-      },4000)
 
 }
 

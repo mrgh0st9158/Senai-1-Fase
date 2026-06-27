@@ -9,28 +9,72 @@
 
 }
 
-body{
+body {
     background-color: brown;
     align-items: center;
+    transition: padding-left 0.4s ease-in-out;
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #b35e3c;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #b35e3c;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1000;
+
+    
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
 }
 
-li a {
+ul.menu_aberto {
+    transform: translateX(0);
+}
+
+body.menu_lateral_ativo {
+    padding-left: 200px; 
+}
+
+body.menu_lateral_ativo #botao_lateral_nav {
+    left: 215px; 
+}
+
+#botao_lateral_nav {
+    position: fixed;
+    top: 35px;
+    left: 7px;
+    z-index: 1001;
+    transition: left 0.4s ease-in-out;
+}
+
+#foto_icone_nav{
+    width: 40px;
+
+}
+
+#conteiner_botoes_nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.botoes_nav {
   display: block;
   color: black;
   padding: 8px 16px;
   text-decoration: none;
 }
 
-/* Change the link and background color on hover */
-li a:hover {
+.botoes_nav:hover {
   background-color: #555555;
   color: white;
 }
@@ -68,7 +112,11 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 350px;
+}
+
+.layout, #p-resposta, #botoes_tela{
+    margin-right: 40px;
 }
 
 #p-resposta{
