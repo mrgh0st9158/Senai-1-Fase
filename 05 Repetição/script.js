@@ -451,6 +451,42 @@ function ola_mundo(){
 
 }
 
+function soma_numeros_impares_1_15(){
+      let i = 0
+
+      for(i = 0; i < 15; i++){
+            if(i%2 != 0){
+                  console.log(i)
+            }
+      }
+
+}
+
+function sequência_1_5(){
+      let numeros = ["1", "12", "123", "1234", "12345"]
+      let i = 0
+
+      for(i = 0; i < numeros.length; i++){
+            
+            console.log(numeros[i])
+
+      }
+
+}
+
+function fatorial_5(){
+      let numero = 5
+      let i = 0
+      let resposta = 1
+
+      for(i = 0; i < numero; i++){
+           resposta *= i
+           
+           console.log(resposta)
+      }
+
+}
+
 function for_teste(){
 
       let soma = 0
