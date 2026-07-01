@@ -276,7 +276,7 @@ function numero_fatorial(){
 
       let numero = Number(prompt("Qual número você deseja calcular?"))
 
-      while(i < numero){
+      while(i <= numero){
             i++
             resposta *= i
             
@@ -352,6 +352,10 @@ function menor_maior(){
 
 }
 
+//============================================================
+//ATIVIDADES MARCIA
+//============================================================
+
 function soma_1_a_10(){
       let soma = 0
 
@@ -396,6 +400,16 @@ function javascript_linhas(){
 
 }
 
+function asteriscos_10(){
+      resposta = ["*"]
+      
+      for(let i = 0; i < 9; i++){
+            resposta.push("*")
+      }
+
+      console.log(resposta)
+}
+
 function multiplos_3(){
       resposta = 0
 
@@ -408,12 +422,6 @@ function multiplos_3(){
       }
 
 }
-
-// function asteriscos(){
-
-//       for
-
-// }
 
 function soma_pares(){
       let resposta = 0
@@ -476,15 +484,31 @@ function sequência_1_5(){
 
 function fatorial_5(){
       let numero = 5
-      let i = 0
+      let i = 1
       let resposta = 1
 
-      for(i = 0; i < numero; i++){
+      for(i = 1; i <= numero; i++){
            resposta *= i
            
            console.log(resposta)
       }
 
+}
+
+function letra_o(){
+      let palavra
+      let letra = 0
+      
+      palavra = prompt("Digite sua palavra:")
+
+      for(let i = 0; i < palavra.length; i++){
+            if(palavra[i] === "o" || palavra[i] === "O"){
+                  letra++
+            }
+
+      }
+
+      console.log("O total de letras O na sua palavra é de: " + letra)
 }
 
 function for_teste(){
