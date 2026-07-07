@@ -16,19 +16,13 @@ const nomes = [
   "Tião"
 ];
 
-const dias_da_semana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
-const copia_semana = []
+let dias_da_semana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
+let numeros_pares = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+let frutas = ["Banana", "Maçã", "Uva"]
 
 let produtos = ["Meia", "Pá de Corte", "Suco de manga", "Leite"]
 let precos = [666, 777, 12, 4]
 
-function inverter_array(){
-  let removido = dias_da_semana.pop(7)
-  copia_semana.push(removido)
-
-  console.log(dias_da_semana)
-  console.log
-}
 
 function ver_produtos(){
   
@@ -62,21 +56,57 @@ function aumentar_preco_300_porcento(){
 function adicionar_produto(){
   let nome_produto
   let preco_produto = 0
-
-    do{
-      nome_produto = prompt("Nome do produto:")
-    }while(nome_produto === "" ||  !isNaN(nome_produto))
-
+  
+  do{
+    nome_produto = prompt("Nome do produto:")
+  }while(nome_produto === "" ||  !isNaN(nome_produto))
+    
     do{
       preco_produto = Number(prompt("Preço do produto:"))
-          
+      
     }while(preco_produto <= 0)
-        
-        
-    
-  produtos.push(nome_produto)
-  precos.push(preco_produto)
+      
+      
+      
+      produtos.push(nome_produto)
+      precos.push(preco_produto)
+      
+      ver_produtos_e_precos()
+      
+    }
 
-  ver_produtos_e_precos()
+function array_dias_semana(){
+  console.log(dias_da_semana)
+}
 
+function inverter_array(){
+  dias_da_semana.reverse()
+
+  console.log(dias_da_semana)
+}
+
+function adicionar_feriado(){
+  dias_da_semana.push("Feriado")
+
+}
+
+function remover_dia_da_semana(){
+  dias_da_semana.pop()
+
+}
+
+function array_numeros_pares(){
+  console.log(numeros_pares)
+}
+
+function substituir_numero(){
+  numeros_pares[2] = 12
+}
+
+function array_frutas(){
+  console.log(frutas)
+}
+
+function adicionar_fruta(){
+  frutas.push("Morango")
 }
