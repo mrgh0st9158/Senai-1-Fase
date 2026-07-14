@@ -20,11 +20,11 @@ function sprint_dia_semana(){
 
 function sprint_bugs(){
     const bugs = []
-    let quantidade_dias = 0, total_bugs = 0, maior_dia = 0
+    let quantidade_dias = 0, total_bugs = 0, maior_dia = 0, maior_bugs = 0
 
     quantidade_dias = Number(prompt("Digite quantos dias esse Sprint possui:"))
 
-    for(let i = 1; i < quantidade_dias; i++){
+    for(let i = 1; i <= quantidade_dias; i++){
         resposta_for = Number(prompt("Digite quantos bugs apareceram no dia " + i))
 
         
@@ -32,8 +32,9 @@ function sprint_bugs(){
         total_bugs += resposta_for
         item = i - 1
         
-        if(bugs[i] > maior_dia){
-            maior_dia = bugs[i]
+        if(bugs[item] > maior_bugs){
+            maior_bugs = bugs[i]
+            maior_dia = bugs.indexOf(maior_bugs)
         }
 
         console.log(i + "° Dia: " + bugs[item])
