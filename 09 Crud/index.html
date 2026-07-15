@@ -7,7 +7,9 @@
     <title>CRUD</title>
 </head>
 <body>
-    <h1>CRUD</h1>
+    <header>
+        <h1>CRUD</h1>
+    </header>
 
     <div id="form">
         <div class="container_inputs">
@@ -30,11 +32,19 @@
             <input id="input_custo" type="text">
         </div>
 
-        <button>+</button>
+        <button onclick="cadastrar_dino()"><img src="foto-dino.png" alt="" id="foto_botao_dino"></button>
+
+        <button onclick="mostrar_todos()">Mostrar Todos os Dinos</button>
+        <button onclick="testar()">Teste</button>
+
+        <div id="div-resposta">
+
+        </div>
 
     </div>
 
-    <button onclick="testar()">Teste</button>
+    <hr>
+
 
     <script src="script.js"></script>
 </body>
