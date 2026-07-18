@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CRUD</title>
 </head>
+
 <body>
     <header>
         <h1 id="h1_crud">CRUD</h1>
@@ -14,7 +16,7 @@
     <div id="form">
         <div class="container_inputs">
             <label for="">Nome:</label>
-            <input id="input_nome" type="text" >
+            <input id="input_nome" type="text">
         </div>
 
         <div class="container_inputs">
@@ -37,22 +39,26 @@
             <input id="input_id" type="text">
         </div>
 
-            <button onclick="cadastrar_dino()" id="botao_cadastrar_dino"><img src="foto-dino.png" alt="" id="foto_botao_dino"></button>
-                        
-        </div>
 
-        <div>
-            <button onclick="mostrar_todos()">Mostrar Todos os Dinos</button>
-            <button onclick="testar()">Teste</button>
-            <button onclick="pesquisar()">Pesquisar</button>
-            <button onclick="salvar_dino()">Salvar Dino</button>
-            <button onclick="apagar_dino()">Apagar Dino</button>
-        </div>
-    
-    <div id="div-resposta">
-        
+        <p>Clique aqui para cadastrar o dino</p>
+        <button onclick="cadastrar_dino()" id="botao_cadastrar_dino"><img src="foto-dino.png" alt=""
+                id="foto_botao_dino"></button>
+
     </div>
-    
+
+    <div>
+        <button onclick="mostrar_todos()">Mostrar Todos os Dinos</button>
+        <button onclick="testar()">Teste</button>
+        <button onclick="pesquisar()">Pesquisar</button>
+        <button onclick="salvar_dino()">Salvar Dino</button>
+        <button onclick="apagar_dino()">Apagar Dino</button>
+    </div>
+
+    <div id="div-resposta">
+
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>

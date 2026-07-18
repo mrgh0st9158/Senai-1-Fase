@@ -42,18 +42,18 @@ button{
 
 }
 
-p, label{
+p{
     color: var(--text-muted);
+}
+
+label{
+    color: var(--text-main);
 }
 
 button:hover{
     background-color: var(--color-primary-hover);
     cursor: pointer;
     scale: 1.08;
-}
-
-label{
-    color: aliceblue;
 }
 
 header{
