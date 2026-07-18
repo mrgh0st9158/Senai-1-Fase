@@ -4,11 +4,50 @@
     box-sizing: border-box;
 }
 
+:root {
+  /* --- Cores Principais (Brand) --- */
+  --color-primary: #415a42;       /* Verde Camuflagem/Selva - tom fechado e fosco */
+  --color-primary-hover: #314432; /* Verde Militar Escuro */
+  --color-secondary: #e29578;     /* Terracota/Argila Queimada - para botões e destaques */
+  --color-secondary-hover: #dd7e5c;
+
+  /* --- Cores de Fundo (Backgrounds) --- */
+  --bg-main: #1c1d17;             /* Pedra Vulcânica - um cinza quase preto, mas com fundo levemente esverdeado/quente */
+  --bg-card: #282a22;             /* Ardósia Escura - para os cards se destacarem sutilmente sobre o fundo principal */
+  --bg-dark: #12130f;             /* Carbono Puro - para o header e o footer */
+
+  /* --- Cores de Texto --- */
+  --text-main: #e6dfd3;           /* Areia Iluminada - substitui o branco; um tom claro, porém fosco e confortável */
+  --text-muted: #a39e93;          /* Poeira/Cinza Quente - para descrições e textos de menor importância */
+  --text-light: #1c1d17;          /* Texto Escuro - para ser usado especificamente dentro de botões claros */
+
+  /* --- Cores de Suporte / Feedback --- */
+  --color-border: #383b30;        /* Linha de Solo - borda escura e sutil para separar os elementos */
+  --color-accent: #d4a373;        /* Ouro Velho / Âmbar Lapidado - para selos de raridade ou preços */
+}
+
 body{
-    background-color: rgb(46, 61, 16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-main);
+}
+
+button{
+    background-color: var(--color-primary);
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+p, label{
+    color: var(--text-muted);
 }
 
 button:hover{
+    background-color: var(--color-primary-hover);
     cursor: pointer;
     scale: 1.08;
 }
@@ -21,15 +60,29 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(79, 189, 57);
+    width: 100%;
+    padding: 10px;
+    background-color: var(--bg-dark);
+
+}
+
+#h1_crud{
+    color: var(--text-main);
 }
 
 #form{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     margin-top: 70px;
     gap: 20px;
+    background-color: var(--bg-card);
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000000;
 }
 
 .container_inputs label{
@@ -41,12 +94,33 @@ header{
     width: 80px;
 }
 
-#div-resposta{
-    color: aliceblue;
+#botao_cadastrar_dino{
+    background: none;
+    border: none;
 }
 
 #botao_teste{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+#div-resposta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: aliceblue;
+    flex-wrap: wrap;
+}
+
+.layout_dinos{
+    background-color: var(--bg-card);
+    width: 350px;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 10px #000000;
+
 }
