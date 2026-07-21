@@ -8,6 +8,21 @@
 
 let dinos = []
 
+function carregar_dados(){
+    dinos = JSON.parse(localStorage.getItem("dinos"))
+    console.log(dinos)
+
+    // texto_lido = localStorage.getItem("dinos")
+    // dinos = JSON.parse(texto-lido)
+}
+
+function salvar_dados(){
+    localStorage.setItem("dinos", JSON.stringify(dinos))
+    
+    // let array = JSON.stringify(dinos)
+    // localStorage.setItem("dinos", array)
+}
+
 function limpar_input() {
     document.getElementById("input_nome").value = ""
     document.getElementById("input_altura").value = ""
@@ -35,6 +50,8 @@ function cadastrar_dino() {
 
     mostrar_todos()
 
+    salvar_dados()
+
 }
 
 function mostrar_todos() {
@@ -59,6 +76,12 @@ function mostrar_todos() {
 }
 
 function testar() {
+    
+    localStorage.setItem("teste", 45)
+
+    let teste_de_leitura = localStorage.getItem("teste")
+    console.log(teste_de_leitura)
+
     dinos = [
         {
             id: 1718324500001,

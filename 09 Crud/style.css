@@ -42,6 +42,12 @@ button{
 
 }
 
+input{
+    background-color: var(--color-primary);
+    color: var(--text-main);
+    border-radius: 30px
+}
+
 p{
     color: var(--text-muted);
 }
