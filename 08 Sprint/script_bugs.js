@@ -30,4 +30,11 @@ function sprint_bugs(){
     console.log("\nDia com menos bugs: " + menor_dia + "° Dia")
     console.log("\nQuantidade de bugs no dia com menos bugs: " + menor_bugs)
     
+    document.getElementById("div-resposta").innerHTML = "Total de Bugs: " + total_bugs + 
+                                                        "<br>Média de Bugs por dia: " + media_bugs
+                                                        "<br>Dia com mais bugs: " + maior_dia + "° Dia"
+                                                        "<br>Quantidade de bugs no dia com mais bugs: " + maior_bugs
+                                                        "<br>Dia com menos bugs: " + menor_dia + "° Dia"
+                                                        "<br>Quantidade de bugs no dia com menos bugs: " + menor_bugs
+
 }
