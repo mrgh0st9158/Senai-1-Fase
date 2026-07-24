@@ -5,12 +5,17 @@
  <a href="#linguagens">Linguagens</a> • 
  <a href="#primeiros_passos">Primeiros Passos</a> • 
   <a href="#equipe">Equipe</a> •
- <a href="#contribuir">Contribuir</a>
+ <a href="#contribuir">Contribuir</a> •
+ <a href="#licenca">Licença</a>
 </p>
 
 <p align="center">
     <b>O site MonstroLogo é um CRUD feito para que monstros de diferentes mitos e lendas possam registrar seus itens preferidos.</b>
 </p>
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![CSS](https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white)
 
 <hr>
 
@@ -94,3 +99,9 @@ Aqui irei explicar como outros devs poderão contribuir para o projeto.
 [📝 Como criar um Pull Request](https://www.atlassian.com/br/git/tutorials/making-a-pull-request)
 
 [💾 Padrões de commit](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
+
+
+
+<h2 id="licenca">📄 Licença</h2>
+
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` para mais informações.
