@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Creepster&display=swap"
+        rel="stylesheet">
+    <title>MonstroLogo</title>
+</head>
+
+<body>
+    <header>
+        <h2>MonstroLogo</h2>
+    </header>
+
+    <section id="section_inicial">
+        <img src="logo-monstrologo.png" alt="" id="foto-logo">
+        <h2>Bem vindo ao catálogo de monstros.</h2>
+    </section>
+    
+
+    <section id="section_form">   
+        <div id="form">
+            <h3>Adicione seu item preferido ou escolha um.</h3>
+        <div class="container_inputs">
+            <label for="">Nome</label>
+            <input type="text">
+        </div>
+        
+        <div class="container_inputs">
+            <label for="">Cor</label>
+            <input type="text">
+        </div>
+        
+        <div class="container_inputs">
+            <label for="">Custo</label>
+            <input type="text">
+        </div>
+        
+        <div class="container_inputs">
+            <label for="">Tipo de monstro que irá receber</label>
+            <select id="tipo_monstro">
+                <option>Vampiro</option>
+                <option>Lobisomem</option>
+                <option>Bruxa</option>
+                <option>Zumbi</option>
+                <option>Fada</option>
+                <option>Frankestein</option>
+            </select>
+        </div>
+        
+        <div class="container_inputs">
+            <label for="">ID</label>
+            <input type="text">
+        </div>
+        
+        <div id="container_button">
+            <button onclick="adicionar_item()" id="botao_adicionar">Adicionar item</button>
+            <button onclick="mostrar_itens()" id="botao_mostrar">Mostrar bestiário</button>
+            <button onclick="buscar_item()" id="botao_buscar">Caçar item</button>
+            <button onclick="remover_item()" id="botao_remover">Expurgar item</button>
+        </div>
+    </div>
+</section>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

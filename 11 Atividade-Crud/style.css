@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Fundo e Estrutura */
+    --bg-main: #0A0612;          /* Escuro Profano (Fundo principal) */
+    --bg-card: #160F26;          /* Roxo Gótico (Cards e tabelas) */
+    --text-primary: #F3E8FF;     /* Pele de Vampiro / Pálido */
+    --text-secondary: #A78BFA;   /* Roxo Místico suave */
+    --border-color: #2E1D4A;     /* Borda discreta */
+    
+    /* Destaque Principal / Navegação */
+    --primary: #9333EA;
+    
+    /* Criar (INVOCAR): Verde Lodo / Radioativo */
+    --btn-create: #22C55E;
+    
+    /* Pesquisar (RASTREAR): Azul Espectral / Frio */
+    --btn-search: #0EA5E9; 
+    
+    /* Editar (MUTAR): Âmbar Alquímico / Veneno */
+    --btn-edit: #F59E0B;         
+    
+    /* Deletar (ESTACAR): Vermelho Sangue Coagulado */
+    --btn-delete: #DC2626;       /* Sangue Vivo */
+    
+    /* Mostrar Todos(MOSTRAR BESTIÁRIO) Cinza Fantasma / Sombra */
+  --btn-all: #334155;           
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-main);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section_form{
+    margin-bottom: 170px;
+}
+
+
+#foto-logo{
+    width: 800px;
+    margin-top: 50px;
+}
+
+header{
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    
+    font-family: "Creepster", serif;
+    font-size: 23px;
+}
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+    box-shadow: 0, 0, #0000;
+    background-color: var(--bg-card);
+    box-shadow: 0 0 10px #000000;
+}
+
+.container_inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_inputs label{
+    display: inline-block;
+    width: 190px;
+    color: var(--text-secondary);
+}
+
+.container_inputs input{
+    border-radius: 20px;
+    padding: 2%;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+}
+
+#container_button{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#container_button button{
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
+}
+
+#container_button button:hover{
+    filter: brightness(0.7);
+}
+
+#botao_adicionar{
+    background-color: var(--btn-create);
+}
+
+#botao_mostrar{
+    background-color: var(--btn-all);
+}
+
+#botao_buscar{
+    background-color: var(--btn-search)
+}
+
+#botao_remover{
+    background-color: var(--btn-delete)
+}
