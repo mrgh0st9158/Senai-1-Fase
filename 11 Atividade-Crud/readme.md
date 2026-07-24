@@ -4,7 +4,7 @@
  <a href="#descricao">Descrição</a> • 
  <a href="#linguagens">Linguagens</a> • 
  <a href="#primeiros_passos">Primeiros Passos</a> • 
-  <a href="#equipe">Colaboradores</a> •
+  <a href="#equipe">Equipe</a> •
  <a href="#contribuir">Contribuir</a>
 </p>
 
