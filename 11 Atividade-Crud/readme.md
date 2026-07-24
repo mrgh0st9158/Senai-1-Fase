@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-    <b>O site Monstrologo é um CRUD feito para monstros de diferente mitos e lendas poderem registrar seus itens preferidos.</b>
+    <b>O site MonstroLogo é um CRUD feito para que monstros de diferentes mitos e lendas possam registrar seus itens preferidos.</b>
 </p>
 
 <hr>
@@ -21,15 +21,15 @@
 <h2 id="descricao">📝 Descrição</h2>
 
 <p> 
-O Monstrologo foi pensado para ser um sistema CRUD no qual diferentes tipos de monstros podem registrar, pesquisar, ver e deletar seus itens preferidos.
+O MonstroLogo foi pensado para ser um sistema CRUD no qual diferentes tipos de monstros podem registrar, pesquisar, ver e deletar seus itens preferidos.
 </p>
 
 <p>
-Os itens podem ser diversos. Uma taça de vinho para um vampiro, por exemplo, ou até mesmo uma poção para uma bruxa. Os itens são da escolha do usuário.
+Os itens podem ser diversos: uma taça de vinho para um vampiro, por exemplo, ou até mesmo uma poção para uma bruxa.
 </p>
 
 <h3>
-Para salvar o item no bestiário, o monstro deve digitar as seguintes característiscas do item: 
+Para salvar o item no bestiário, o monstro deve digitar as seguintes características do item: 
 </h3>
 
 - Nome
@@ -87,7 +87,7 @@ Aqui irei explicar como outros devs poderão contribuir para o projeto.
 2. `git config user.email "email-aqui"`
 3. `git config user.name "usuario-aqui"`
 4. Siga os padrões de commit
-5. Abra um Pull Request explicando o problema resolvido ou mudança feita, se existir, anexar uma captura de tela das mudanças, depois espere pela revisão!
+5. Abra um Pull Request explicando o problema resolvido ou a mudança feita. Se houver uma captura de tela das mudanças, anexe-a e aguarde a revisão!
 
 <h3>Documentação que pode ajudar</h3>
 
