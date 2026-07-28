@@ -41,8 +41,8 @@ Para salvar o item no bestiário, o monstro deve digitar as seguintes caracterí
 - Cor
 - Custo
 - Tipo de Monstro
-- Raridade do Item
 - Origem
+- ID
 
 <h2 id="linguagens">💻 Linguagens</h2>
 

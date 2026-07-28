@@ -42,17 +42,27 @@
             </div>
 
             <div class="container_inputs">
-                <label for="">Tipo de monstro que irá receber</label>
-                <select id="input_monstro" id="tipo_monstro">
+                <label for="">Origem</label>
+                <input id="input_origem" type="text">
+            </div>
+
+            <div class="container_inputs">
+                <label for="">Tipo de monstro dono do item</label>
+                <select id="input_monstro">
                     <option value="">Selecione</option>
                     <option>Vampiro</option>
                     <option>Lobisomem</option>
                     <option>Bruxa</option>
                     <option>Zumbi</option>
                     <option>Fada</option>
-                    <option>Frankestein</option>
+                    <option>Frankenstein</option>
+                    <option>Slime</option>
+                    <option>Sereia</option>
+                    <option>Goblin</option>
                 </select>
             </div>
+
+
 
             <div class="container_inputs">
                 <label for="">ID</label>
@@ -63,11 +73,13 @@
                 <button onclick="adicionar_item()" id="botao_adicionar">Adicionar item</button>
                 <button onclick="mostrar_itens()" id="botao_mostrar">Mostrar bestiário</button>
                 <button onclick="buscar_item()" id="botao_buscar">Caçar item</button>
+                <button onclick="cacar_monstro()" id="botao_cacar_monstro">Caçar monstro</button>
                 <button onclick="remover_item()" id="botao_remover">Expurgar item</button>
-                <button onclick="teste()" id="botao_remover">teste</button>
+                <button onclick="teste()" id="botao_teste">teste</button>
             </div>
         </div>
 
+        <div id="mensagem"></div>
         <div id="div_cards"></div>
     </section>
 
