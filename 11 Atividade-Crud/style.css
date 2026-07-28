@@ -47,6 +47,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--bg-main);
+    padding-bottom: 300px;
 
     
 }
@@ -108,9 +109,8 @@ header {
     padding: 30px;
     border-radius: 20px;
     gap: 20px;
-    box-shadow: 0, 0, #0000;
     background-color: var(--bg-card);
-    box-shadow: 0 0 15px var(--text-secondary);
+    box-shadow: 0 0 5px var(--text-secondary);
     color: var(--text-secondary);
 }
 
@@ -172,5 +172,20 @@ header {
 }
 
 #div_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 75px;
+    gap: 45px;
     color: var(--text-primary);
+}
+
+.layout_itens{
+    background-color: var(--bg-card);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px var(--text-secondary);
+    font-size: 18px;
+
 }
