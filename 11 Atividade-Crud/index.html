@@ -17,13 +17,13 @@
         <h2>MonstroLogo</h2>
     </header>
 
-    <section id="section_inicial" class="esconder_elemento">
+    <section id="section_inicial" class="">
         <img src="logo-monstrologo.png" alt="" id="foto-logo">
         <h2>Bem vindo ao catálogo de monstros.</h2>
     </section>
 
 
-    <section id="section_form" class="">
+    <section id="section_form" class="esconder_elemento">
         <div id="form">
             <h3>Adicione seu item preferido ou escolha um.</h3>
             <div class="container_inputs">
@@ -59,6 +59,8 @@
                     <option>Slime</option>
                     <option>Sereia</option>
                     <option>Goblin</option>
+                    <option>Fantasma</option>
+                    <option>Demônio</option>
                 </select>
             </div>
 
@@ -73,9 +75,12 @@
                 <button onclick="adicionar_item()" id="botao_adicionar">Adicionar item</button>
                 <button onclick="mostrar_itens()" id="botao_mostrar">Mostrar bestiário</button>
                 <button onclick="buscar_item()" id="botao_buscar">Caçar item</button>
-                <button onclick="cacar_monstro()" id="botao_cacar_monstro">Caçar monstro</button>
+                <button onclick="cacar_monstro()" id="botao_cacar">Caçar monstro</button>
+                <button onclick="editar_item()" id="botao_editar">Mutar item</button>
                 <button onclick="remover_item()" id="botao_remover">Expurgar item</button>
-                <button onclick="teste()" id="botao_teste">teste</button>
+
+                <!-- botão feito para adicionar itens de forma rápida -->
+                <!-- <button onclick="teste()" id="botao_teste">Teste</button> -->
             </div>
         </div>
 

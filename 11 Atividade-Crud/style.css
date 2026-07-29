@@ -37,6 +37,7 @@
     --btn-edit: #F59E0B;
     --btn-delete: #DC2626;
     --btn-all: #546d8f;
+    --btn-hunt: #892edf;
 }
 
 /* =========================
@@ -50,7 +51,7 @@ body {
     justify-content: center;
 
     background-color: var(--bg-main);
-    padding-bottom: 300px;
+    padding-bottom: 180px;
 }
 
 /* =========================
@@ -130,7 +131,7 @@ header {
 
     border-radius: 20px;
     background-color: var(--bg-card);
-    box-shadow: 0 0 5px var(--text-secondary);
+    box-shadow: 0 0 14px #a268ff;
 
     color: var(--text-secondary);
 }
@@ -198,6 +199,14 @@ header {
     background-color: var(--btn-search);
 }
 
+#botao_editar{
+    background-color: var(--btn-edit);
+}
+
+#botao_cacar{
+    background-color: var(--btn-hunt);
+}
+
 #botao_remover {
     background-color: var(--btn-delete);
 }
@@ -229,7 +238,7 @@ header {
 
     background-color: var(--bg-card);
     border-radius: 20px;
-    box-shadow: 0 0 5px var(--text-secondary);
+    box-shadow: 0 0 14px #a268ff;
 
     font-size: 20px;
 }
@@ -240,8 +249,8 @@ header {
 }
 
 #mensagem{
-    position: fixed;
-    top: 660px;
+    position: absolute;
+    top: 880px;
 
     margin-top: 60px;
 
