@@ -38,6 +38,8 @@
     --btn-delete: #DC2626;
     --btn-all: #546d8f;
     --btn-hunt: #892edf;
+    --btn-save: #545dda;
+    --btn-load: #ce4ba6;
 }
 
 /* =========================
@@ -209,6 +211,14 @@ header {
 
 #botao_remover {
     background-color: var(--btn-delete);
+}
+
+#botao_salvar{
+    background-color: var(--btn-save);
+}
+
+#botao_carregar{
+    background-color: var(--btn-load);
 }
 
 /* =========================
