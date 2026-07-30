@@ -160,129 +160,129 @@ function carregar_itens() {
 
 }
 
-// function teste() {
-//   const novo_item = [
-//     {
-//       id: 154367,
-//       nome: "Taça de Sangue",
-//       cor: "Vermelho",
-//       custo: 50,
-//       monstro: "Vampiro",
-//       origem: "Transilvânia"
-//     },
-//     {
-//       id: 2432212,
-//       nome: "Cérebro Fresco",
-//       cor: "Rosa",
-//       custo: 25,
-//       monstro: "Zumbi",
-//       origem: "Humanos"
-//     },
-//     {
-//       id: 397564,
-//       nome: "Pó de Plim Plim Mágico",
-//       cor: "Dourado",
-//       custo: 40,
-//       monstro: "Fada",
-//       origem: "Floresta da Luz"
-//     },
-//     {
-//       id: 4425643,
-//       nome: "Amuleto da Lua Cheia",
-//       cor: "Prata",
-//       custo: 35,
-//       monstro: "Lobisomem",
-//       origem: "Floresta das Sombras"
-//     },
-//     {
-//       id: 586753,
-//       nome: "Parafuso Energizado",
-//       cor: "Verde",
-//       custo: 60,
-//       monstro: "Frankenstein",
-//       origem: "Laboratório Frankenstein"
-//     },
-//     {
-//       id: 683214,
-//       nome: "Caldeirão Encantado",
-//       cor: "Preto",
-//       custo: 75,
-//       monstro: "Bruxa",
-//       origem: "Pântano Sombrio"
-//     },
-//     {
-//       id: 825631,
-//       nome: "Pérola Abissal",
-//       cor: "Azul",
-//       custo: 80,
-//       monstro: "Sereia",
-//       origem: "Oceano Profundo"
-//     },
-//     {
-//       id: 104752,
-//       nome: "Cogumelo Gigante",
-//       cor: "Laranja",
-//       custo: 18,
-//       monstro: "Goblin",
-//       origem: "Caverna Musgosa"
-//     },
-//     {
-//       id: 126874,
-//       nome: "Núcleo Gelatinoso",
-//       cor: "Azul-claro",
-//       custo: 45,
-//       monstro: "Slime",
-//       origem: "Pântano Cristalino"
-//     },
-//     {
-//       id: 168318,
-//       nome: "Tridente Infernal",
-//       cor: "Vermelho-Escuro",
-//       custo: 120,
-//       monstro: "Demônio",
-//       origem: "Submundo"
-//     },
-//     {
-//       id: 191651,
-//       nome: "Lençol Assombrado",
-//       cor: "Branco",
-//       custo: 15,
-//       monstro: "Fantasma",
-//       origem: "Mansão Abandonada"
-//     },
-//     {
-//       id: 148096,
-//       nome: "Morcego Assado",
-//       cor: "Marrom",
-//       custo: 22,
-//       monstro: "Vampiro",
-//       origem: "Castelo Sombrio"
-//     },
-//     {
-//       id: 714892,
-//       nome: "Poção da Invisibilidade",
-//       cor: "Roxo",
-//       custo: 90,
-//       monstro: "Bruxa",
-//       origem: "Torre Arcana"
-//     },
-//     {
-//       id: 202762,
-//       nome: "Lanterna Espectral",
-//       cor: "Azul-Claro",
-//       custo: 55,
-//       monstro: "Fantasma",
-//       origem: "Cemitério Antigo"
-//     }
-//   ];
+function teste() {
+  const novo_item = [
+    {
+      id: 154367,
+      nome: "Taça de Sangue",
+      cor: "Vermelho",
+      custo: 50,
+      monstro: "Vampiro",
+      origem: "Transilvânia"
+    },
+    {
+      id: 2432212,
+      nome: "Cérebro Fresco",
+      cor: "Rosa",
+      custo: 25,
+      monstro: "Zumbi",
+      origem: "Humanos"
+    },
+    {
+      id: 397564,
+      nome: "Pó de Plim Plim Mágico",
+      cor: "Dourado",
+      custo: 40,
+      monstro: "Fada",
+      origem: "Floresta da Luz"
+    },
+    {
+      id: 4425643,
+      nome: "Amuleto da Lua Cheia",
+      cor: "Prata",
+      custo: 35,
+      monstro: "Lobisomem",
+      origem: "Floresta das Sombras"
+    },
+    {
+      id: 586753,
+      nome: "Parafuso Energizado",
+      cor: "Verde",
+      custo: 60,
+      monstro: "Frankenstein",
+      origem: "Laboratório Frankenstein"
+    },
+    {
+      id: 683214,
+      nome: "Caldeirão Encantado",
+      cor: "Preto",
+      custo: 75,
+      monstro: "Bruxa",
+      origem: "Pântano Sombrio"
+    },
+    {
+      id: 825631,
+      nome: "Pérola Abissal",
+      cor: "Azul",
+      custo: 80,
+      monstro: "Sereia",
+      origem: "Oceano Profundo"
+    },
+    {
+      id: 104752,
+      nome: "Cogumelo Gigante",
+      cor: "Laranja",
+      custo: 18,
+      monstro: "Goblin",
+      origem: "Caverna Musgosa"
+    },
+    {
+      id: 126874,
+      nome: "Núcleo Gelatinoso",
+      cor: "Azul-claro",
+      custo: 45,
+      monstro: "Slime",
+      origem: "Pântano Cristalino"
+    },
+    {
+      id: 168318,
+      nome: "Tridente Infernal",
+      cor: "Vermelho-Escuro",
+      custo: 120,
+      monstro: "Demônio",
+      origem: "Submundo"
+    },
+    {
+      id: 191651,
+      nome: "Lençol Assombrado",
+      cor: "Branco",
+      custo: 15,
+      monstro: "Fantasma",
+      origem: "Mansão Abandonada"
+    },
+    {
+      id: 148096,
+      nome: "Morcego Assado",
+      cor: "Marrom",
+      custo: 22,
+      monstro: "Vampiro",
+      origem: "Castelo Sombrio"
+    },
+    {
+      id: 714892,
+      nome: "Poção da Invisibilidade",
+      cor: "Roxo",
+      custo: 90,
+      monstro: "Bruxa",
+      origem: "Torre Arcana"
+    },
+    {
+      id: 202762,
+      nome: "Lanterna Espectral",
+      cor: "Azul-Claro",
+      custo: 55,
+      monstro: "Fantasma",
+      origem: "Cemitério Antigo"
+    }
+  ];
 
-//   for (let i = 0; i < novo_item.length; i++) {
-//     if (!itens.some(item => item.id === novo_item[i].id)) {
-//       itens.push(...novo_item)
-//     }
-//   }
+  for (let i = 0; i < novo_item.length; i++) {
+    if (!itens.some(item => item.id === novo_item[i].id)) {
+      itens.push(...novo_item)
+    }
+  }
 
-//   mostrar_itens()
+  mostrar_itens()
 
-//   limpar_input()
-// }
+  limpar_input()
+}
