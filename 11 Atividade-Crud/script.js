@@ -9,7 +9,10 @@ setTimeout(() => {
   }, 700)
 }, 2000)
 
+
 let itens = []
+
+
 const mensagem = document.getElementById("mensagem")
 
 function limpar_input() {
@@ -46,6 +49,8 @@ function adicionar_item() {
 
   mostrar_itens()
 
+  salvar_itens()
+
 }
 
 function mostrar_itens() {
@@ -81,7 +86,7 @@ function buscar_item() {
 
 function cacar_monstro() {
   //resetar elementos
-  limpar_mensagem()
+  limpar_mensagem();
 
   for (let i = 0; i < itens.length; i++) {
     document.getElementById("card_" + i).classList.remove("esconder_elemento")
@@ -119,6 +124,8 @@ function editar_item() {
       limpar_input()
     }
   }
+
+  salvar_itens();
 }
 
 function remover_item() {
@@ -132,7 +139,11 @@ function remover_item() {
       limpar_input()
     }
   }
+
+  salvar_itens()
+  mostrar_itens()
 }
+
 
 function salvar_itens() {
   localStorage.setItem("itens", JSON.stringify(itens))
@@ -141,20 +152,10 @@ function salvar_itens() {
     document.getElementById("card_" + i).classList.add("esconder_elemento")
   }
 
-  mensagem.innerHTML = `<h1>Salvo com sucesso</h1>`
-
-  setTimeout(() => {
-    for (let i = 0; i < itens.length; i++) {
-      document.getElementById("card_" + i).classList.remove("esconder_elemento")
-    }
-
-    limpar_mensagem()
-
-  }, 2000)
 }
 
 function carregar_itens() {
-  itens = JSON.parse(localStorage.getItem("itens"))
+  itens = JSON.parse(localStorage.getItem("itens")) || [];
 
   mostrar_itens()
 
@@ -278,7 +279,7 @@ function teste() {
 
   for (let i = 0; i < novo_item.length; i++) {
     if (!itens.some(item => item.id === novo_item[i].id)) {
-      itens.push(...novo_item)
+      itens.push(novo_item[i])
     }
   }
 
@@ -286,3 +287,5 @@ function teste() {
 
   limpar_input()
 }
+
+carregar_itens();
